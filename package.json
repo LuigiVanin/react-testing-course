@@ -12,7 +12,10 @@
     "test:async": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "test:cy": " cypress open"
+    "test:cy": " cypress open",
+    "test:cy:open": " cypress open"
+
+
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",

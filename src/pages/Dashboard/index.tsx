@@ -24,7 +24,11 @@ export default function Dashboard({ fetchPokemonList }: IProps) {
       <h1>Dashboard</h1>
       <ul className={styles["container-pokemons"]}>
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id} onClick={() => handleNavigate(pokemon.id)}>
+          <li
+            key={pokemon.id}
+            data-testid={`pokemon-${pokemon.id}`}
+            onClick={() => handleNavigate(pokemon.id)}
+          >
             <h1>{pokemon.name}</h1>
             <img src={pokemon.image} alt={pokemon.name} />
             <strong>{pokemon.type}</strong>

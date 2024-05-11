@@ -21,7 +21,9 @@ export default function Login() {
         <input type="text" placeholder="Insira sua senha" />
         <button data-testid="login-button">Login</button>
       </form>
-      <Link to="/signup">Não tem cadastro? Clique aqui!</Link>
+      <Link to="/signup" data-testid="signup-redirect">
+        Não tem cadastro? Clique aqui!
+      </Link>
     </div>
   );
 }
