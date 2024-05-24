@@ -16,13 +16,19 @@ const SignUp = () => {
       <form onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
 
-        <input type="text" placeholder="Insira seu nome" />
-        <input type="text" placeholder="Insira seu email" />
-        <input type="text" placeholder="Insira sua senha" />
+        <input type="text" data-testid="name" placeholder="Insira seu nome" />
+        <input type="text" data-testid="email" placeholder="Insira seu email" />
+        <input
+          type="text"
+          data-testid="password"
+          placeholder="Insira sua senha"
+        />
 
         <button data-testid="signup-button">Sign Up</button>
       </form>
-      <Link to="/">Já tem conta? Vá para tela de login</Link>
+      <Link to="/" data-testid="signin-redirect">
+        Já tem conta? Vá para tela de login
+      </Link>
     </div>
   );
 };

@@ -62,6 +62,6 @@ describe("Testing dashboard page", () => {
     cy.url()
       .should("not.match", /\/pokemon\/1$/)
       .should("match", /\/dashboard$/);
-    cy.contains(/Dasboard/i);
+    cy.contains(/Dashboard/i);
   });
 });
